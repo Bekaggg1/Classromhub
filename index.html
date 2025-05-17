@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ClassroomHub</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>📚 ClassroomHub</h1>
+    <nav>
+      <a href="#upload">Upload</a>
+      <a href="#materials">Materials</a>
+      <a href="#homework">Homework</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="upload">
+      <h2>Upload Resource</h2>
+      <form id="uploadForm">
+        <input type="text" placeholder="Title" required />
+        <input type="text" placeholder="Subject (e.g. Math)" required />
+        <input type="url" placeholder="Link to a site or video (optional)" />
+        <input type="file" accept=".pdf,.docx,.png,.jpg" />
+        <button type="submit">Upload</button>
+      </form>
+    </section>
+
+    <section id="materials">
+      <h2>Study Materials</h2>
+      <div class="card-container">
+        <!-- Cards will be added dynamically -->
+      </div>
+    </section>
+
+    <section id="homework">
+      <h2>Homework Board</h2>
+      <ul id="homeworkList">
+        <!-- Homework items will appear here -->
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 ClassroomHub. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
